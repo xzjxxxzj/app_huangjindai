@@ -15,7 +15,7 @@ enum MethodType {
     case post
 }
 
-fileprivate let key : String = "cwWE09ZuOnadWl2Br9fSvsBRNtHIZRv4"
+fileprivate let key : String = ""
 
 class NetWorkTools {
     //请求获得JSON格式数据
