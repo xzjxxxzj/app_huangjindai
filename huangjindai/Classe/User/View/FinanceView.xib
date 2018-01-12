@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Wc8-3i-BWz" customClass="FinanceView" customModule="huangjindai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                    <rect key="frame" x="0.0" y="0.0" width="432" height="123"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总资产：0元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEC-kA-Wj3">
+                            <rect key="frame" x="15" y="53.5" width="74.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTn-ML-A8n">
+                            <rect key="frame" x="382" y="51.5" width="40" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="4KL-8A-PQV"/>
+                                <constraint firstAttribute="height" constant="20" id="Tb0-rB-PmQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="充值"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBu-aW-B0N">
+                            <rect key="frame" x="327" y="51.5" width="40" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="B8K-Fj-5fe"/>
+                                <constraint firstAttribute="height" constant="20" id="v6M-Q0-DcB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="提现"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="sBu-aW-B0N" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="A2n-Zo-9GW"/>
+                        <constraint firstItem="zTn-ML-A8n" firstAttribute="leading" secondItem="sBu-aW-B0N" secondAttribute="trailing" constant="15" id="EQa-iD-UK9"/>
+                        <constraint firstAttribute="trailing" secondItem="zTn-ML-A8n" secondAttribute="trailing" constant="10" id="Yrv-9b-xBg"/>
+                        <constraint firstItem="zTn-ML-A8n" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gqo-tH-RnT"/>
+                        <constraint firstItem="uEC-kA-Wj3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="scY-Ma-jRs"/>
+                        <constraint firstItem="uEC-kA-Wj3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="xjM-xO-6pf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="FPv-Gp-gyV"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="Wc8-3i-BWz" secondAttribute="top" id="ibW-5q-Hgo"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="Wc8-3i-BWz" secondAttribute="leading" id="j1y-Nj-3yC"/>
+                <constraint firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="15" id="kLW-xZ-aDa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chongzhi" destination="zTn-ML-A8n" id="3vg-qM-gje"/>
+                <outlet property="tixian" destination="sBu-aW-B0N" id="oNY-m1-COQ"/>
+                <outlet property="zichan" destination="uEC-kA-Wj3" id="pQ2-aY-L2M"/>
+            </connections>
+            <point key="canvasLocation" x="-150" y="-90"/>
+        </view>
+    </objects>
+</document>

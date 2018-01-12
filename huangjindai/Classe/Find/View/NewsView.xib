@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NewsView" customModule="huangjindai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD5-QK-uBK">
+                    <rect key="frame" x="15" y="10" width="200" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="beP-Oq-EhG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-11-01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6j-es-xu5">
+                    <rect key="frame" x="15" y="32" width="58.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGY-Ah-q3K">
+                    <rect key="frame" x="15" y="50.5" width="200" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="uvK-RC-r7N"/>
+                        <constraint firstAttribute="width" constant="200" id="yrw-lz-eJG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oGL-Bo-3gr">
+                    <rect key="frame" x="327" y="17.5" width="120" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="ou8-xM-bjP"/>
+                        <constraint firstAttribute="height" constant="80" id="q86-Ng-EZS"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cD5-QK-uBK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ACs-jk-HoY"/>
+                <constraint firstAttribute="trailing" secondItem="oGL-Bo-3gr" secondAttribute="trailing" constant="20" id="EWP-0c-KJH"/>
+                <constraint firstItem="fGY-Ah-q3K" firstAttribute="top" secondItem="H6j-es-xu5" secondAttribute="bottom" constant="5" id="KDb-Fn-hwz"/>
+                <constraint firstItem="fGY-Ah-q3K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Mtc-2E-6T9"/>
+                <constraint firstItem="cD5-QK-uBK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="WBE-va-e0p"/>
+                <constraint firstItem="oGL-Bo-3gr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ncr-FB-ySb"/>
+                <constraint firstItem="H6j-es-xu5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="o0l-0R-kw3"/>
+                <constraint firstItem="H6j-es-xu5" firstAttribute="top" secondItem="cD5-QK-uBK" secondAttribute="bottom" constant="5" id="t5f-uM-WRW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="content" destination="fGY-Ah-q3K" id="LsB-Sn-XwY"/>
+                <outlet property="contentH" destination="uvK-RC-r7N" id="5pE-dL-5kt"/>
+                <outlet property="createTime" destination="H6j-es-xu5" id="RB6-O5-r2v"/>
+                <outlet property="newsImage" destination="oGL-Bo-3gr" id="Ogr-Rg-rgn"/>
+                <outlet property="titileWidth" destination="beP-Oq-EhG" id="2Tg-Nr-0o3"/>
+                <outlet property="title" destination="cD5-QK-uBK" id="Jsd-DU-KX4"/>
+            </connections>
+            <point key="canvasLocation" x="-130.5" y="-124.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SetInviteView" customModule="huangjindai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置您的专属邀请码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ8-6j-q94">
+                    <rect key="frame" x="118" y="30" width="138" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.6628063917" green="0.66277885439999995" blue="0.66279155020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的邀请码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMd-70-CXv">
+                    <rect key="frame" x="30" y="68" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tipsIco" highlightedImage="tipsIco" translatesAutoresizingMaskIntoConstraints="NO" id="CSR-Xm-Evk">
+                    <rect key="frame" x="30" y="108" width="14" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="Pbj-1s-qzv"/>
+                        <constraint firstAttribute="height" constant="14" id="hmT-QQ-eZN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小提示：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYJ-DC-mql">
+                    <rect key="frame" x="54" y="108" width="49.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可任意输入数字、字母6~20位字符。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRS-jS-4GQ">
+                    <rect key="frame" x="55" y="127.5" width="202" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uj9-A8-qqS">
+                    <rect key="frame" x="87" y="172" width="200" height="40"/>
+                    <color key="backgroundColor" red="0.78828215599060059" green="0.78824979066848755" blue="0.78826475143432617" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Ork-Cx-kIa"/>
+                        <constraint firstAttribute="height" constant="40" id="tpC-hH-9i3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="生成邀请码"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uj9-A8-qqS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1KT-lP-OuY"/>
+                <constraint firstItem="iQ8-6j-q94" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="75I-VZ-oGL"/>
+                <constraint firstItem="iQ8-6j-q94" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="7JE-os-wXe"/>
+                <constraint firstItem="qMd-70-CXv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="7tG-Z3-yKP"/>
+                <constraint firstItem="TYJ-DC-mql" firstAttribute="leading" secondItem="CSR-Xm-Evk" secondAttribute="trailing" constant="10" id="80l-UE-CK0"/>
+                <constraint firstItem="CSR-Xm-Evk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="D9b-01-fzj"/>
+                <constraint firstItem="aRS-jS-4GQ" firstAttribute="top" secondItem="TYJ-DC-mql" secondAttribute="bottom" constant="5" id="IGX-H5-gcG"/>
+                <constraint firstAttribute="trailing" secondItem="qMd-70-CXv" secondAttribute="trailing" constant="30" id="KiG-Ko-IqD"/>
+                <constraint firstItem="TYJ-DC-mql" firstAttribute="top" secondItem="qMd-70-CXv" secondAttribute="bottom" constant="10" id="MRn-64-p1Q"/>
+                <constraint firstItem="aRS-jS-4GQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="55" id="Qlc-qF-8fm"/>
+                <constraint firstItem="CSR-Xm-Evk" firstAttribute="top" secondItem="qMd-70-CXv" secondAttribute="bottom" constant="10" id="mXb-gj-bXZ"/>
+                <constraint firstItem="qMd-70-CXv" firstAttribute="top" secondItem="iQ8-6j-q94" secondAttribute="bottom" constant="20" id="tDc-bf-ErO"/>
+                <constraint firstItem="uj9-A8-qqS" firstAttribute="top" secondItem="aRS-jS-4GQ" secondAttribute="bottom" constant="30" id="wxT-EF-j2f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="inviteCode" destination="qMd-70-CXv" id="5HI-nw-F26"/>
+                <outlet property="setBtn" destination="uj9-A8-qqS" id="6hx-81-xLx"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tipsIco" width="15" height="15"/>
+    </resources>
+</document>

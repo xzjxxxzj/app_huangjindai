@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeHuoqiView" customModule="huangjindai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYr-5v-htb">
+                    <rect key="frame" x="0.0" y="0.0" width="373" height="147"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huoqi" translatesAutoresizingMaskIntoConstraints="NO" id="YPb-84-95p">
+                            <rect key="frame" x="30" y="34" width="42" height="79"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-9b-qi6">
+                            <rect key="frame" x="174.5" y="5" width="25" height="48"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEV-Y4-3ZN">
+                            <rect key="frame" x="197" y="30" width="9.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="万份收益：0 元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1U-VF-baY">
+                            <rect key="frame" x="144.5" y="66" width="84.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-KI-fWd">
+                            <rect key="frame" x="111.5" y="105" width="150" height="32"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.60445205479452058" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="8Jx-2W-BAc"/>
+                                <constraint firstAttribute="height" constant="32" id="qQ4-a7-vwf"/>
+                            </constraints>
+                            <state key="normal" title="立即加入">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="currentHome" translatesAutoresizingMaskIntoConstraints="NO" id="YNb-aE-739">
+                            <rect key="frame" x="290" y="79" width="78" height="68"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="68" id="2bh-3m-Dp2"/>
+                                <constraint firstAttribute="width" constant="78" id="3an-Dl-fUB"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昨日收益：0 元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="led-0j-wvH">
+                            <rect key="frame" x="283.5" y="10" width="84.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="7Iq-KI-fWd" firstAttribute="centerX" secondItem="VYr-5v-htb" secondAttribute="centerX" id="0uM-Bi-qrN"/>
+                        <constraint firstItem="YPb-84-95p" firstAttribute="centerY" secondItem="VYr-5v-htb" secondAttribute="centerY" id="Ato-YY-C7e"/>
+                        <constraint firstItem="K1U-VF-baY" firstAttribute="centerY" secondItem="VYr-5v-htb" secondAttribute="centerY" id="EBM-8J-mqN"/>
+                        <constraint firstItem="K1U-VF-baY" firstAttribute="centerX" secondItem="VYr-5v-htb" secondAttribute="centerX" id="JYQ-u5-Ndo"/>
+                        <constraint firstItem="zEV-Y4-3ZN" firstAttribute="centerX" secondItem="VYr-5v-htb" secondAttribute="centerX" constant="15" id="Kf5-Tm-Pgd"/>
+                        <constraint firstItem="YPb-84-95p" firstAttribute="leading" secondItem="VYr-5v-htb" secondAttribute="leading" constant="30" id="NqG-Lf-3VS"/>
+                        <constraint firstItem="led-0j-wvH" firstAttribute="top" secondItem="VYr-5v-htb" secondAttribute="top" constant="10" id="QDg-oq-4Fe"/>
+                        <constraint firstAttribute="bottom" secondItem="YNb-aE-739" secondAttribute="bottom" id="RXt-kb-Es2"/>
+                        <constraint firstItem="zEV-Y4-3ZN" firstAttribute="top" secondItem="VYr-5v-htb" secondAttribute="top" constant="30" id="SH4-HK-Mmy"/>
+                        <constraint firstAttribute="trailing" secondItem="led-0j-wvH" secondAttribute="trailing" constant="5" id="YWr-Pn-1a7"/>
+                        <constraint firstItem="bHD-9b-qi6" firstAttribute="top" secondItem="VYr-5v-htb" secondAttribute="top" constant="5" id="fOm-SP-dZy"/>
+                        <constraint firstAttribute="trailing" secondItem="YNb-aE-739" secondAttribute="trailing" constant="5" id="fdl-pT-CRW"/>
+                        <constraint firstItem="bHD-9b-qi6" firstAttribute="centerX" secondItem="VYr-5v-htb" secondAttribute="centerX" id="jX1-Hm-yRl"/>
+                        <constraint firstAttribute="bottom" secondItem="7Iq-KI-fWd" secondAttribute="bottom" constant="10" id="kLe-mH-gmc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.0" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VYr-5v-htb" secondAttribute="trailing" id="36R-gR-7f9"/>
+                <constraint firstAttribute="bottom" secondItem="VYr-5v-htb" secondAttribute="bottom" constant="3" id="E59-OJ-NUn"/>
+                <constraint firstItem="VYr-5v-htb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pUa-I0-SKf"/>
+                <constraint firstItem="VYr-5v-htb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z1c-w6-rvS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="huoqiButton" destination="7Iq-KI-fWd" id="oie-Dx-cX0"/>
+                <outlet property="huoqiRate" destination="bHD-9b-qi6" id="sqa-Gu-rZE"/>
+                <outlet property="wanfenshouyi" destination="K1U-VF-baY" id="obi-mt-1C0"/>
+                <outlet property="yestdayMoney" destination="led-0j-wvH" id="xcx-3i-DGU"/>
+            </connections>
+            <point key="canvasLocation" x="-1932" y="208"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="currentHome" width="159" height="144"/>
+        <image name="huoqi" width="42" height="79"/>
+    </resources>
+</document>
